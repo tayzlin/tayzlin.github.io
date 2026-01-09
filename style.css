@@ -1,0 +1,536 @@
+body{
+  font-family: "Google Sans Flex", sans-serif;
+  background-color: #FFFFFF; 
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Google Sans Flex", sans-serif;
+  letter-spacing: initial;
+  color: #050505;
+  font-weight: medium;
+}
+a{
+  text-decoration: none;
+}
+.btn{ 
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: normal;
+  border: none;
+  background-color: #121212;
+}
+.btn:hover{ 
+  background-color: #616161;
+}
+
+/* custom css */
+.navbar{
+  font-family: "Google Sans Flex", sans-serif;
+  background: #bef9f9;
+  color: #050505;
+}
+.navbar-brand{
+  font-weight: bolder;
+}
+.nav-item .nav-link{
+  font-weight: 500!important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #050505;
+  text-decoration: underline #4573a8 2px;
+}
+
+.navbar .navbar-toggler{
+  border: none;
+}
+
+/* feature section */
+#feature-section{ 
+  background: linear-gradient(to bottom, #bef9f9, 70%, #ffffff);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  min-height: auto;
+}
+@media screen and (max-width: 576px) {
+  #feature-section{ 
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-me{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+#about-me h1{
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+
+h1#tagline{
+  font-size: 58px;
+  color: #202124;
+}
+  @media screen and (max-width: 992px) {
+    h1#tagline{
+      font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h1#tagline{
+      font-size: 25px;
+    }
+  }
+
+#about-me p{
+color: #050505;
+font-size: 22px;
+}
+@media screen and (max-width: 992px) {
+  #about-me p{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-me p{
+    font-size: 16px;
+  }
+}
+
+#about-me span{
+  margin-right: 5px;
+}
+#about-me .bi.bi-twitter{ 
+  font-size: x-large;
+  color: #006eb7;
+}
+#about-me  .bi.bi-twitter:hover{
+  color: #050505;
+}
+
+/* main-section */
+#main-section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+  @media screen and (max-width: 768px) {
+    #main-section{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+/* blog */
+#blog{
+  background-image: url('img/blog-bg.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+  @media screen and (max-width: 768px) {
+      #blog{
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+  }
+#blog h2{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 62px;
+}
+  @media screen and (max-width: 992px) {
+    #blog h2{
+      font-size: 56px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #blog h2{
+      font-size: 48px;
+    }
+  }
+#blog p{
+  font-size: 18px;
+} 
+  @media screen and (max-width: 992px) {
+    #blog p{
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #blog p{
+      font-size: 16px;
+    }
+  }
+#blog a{
+  color: #ffffff;
+}
+#blog a:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+#blog .btn{ 
+  border: none;
+  background-color: #121212;
+}
+#blog .btn:hover{ 
+  background-color: #616161;
+}
+
+/* Books that influcened me */
+#books{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+  @media screen and (max-width: 768px){
+    #books{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+#book-list{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 4.7px 9.4px 9.4px hsl(0deg 0% 0% / 0.35); 
+}
+#book-list h2{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 30px;
+  background: linear-gradient(0deg,#fce62e 40%,transparent 0);
+  display: inline;
+}
+  @media screen and (max-width: 992px){
+    #book-list h2{
+      font-size: x-large;
+    }
+  }
+  @media screen and (max-width: 768px){
+    #book-list h2{
+      font-size: x-large;
+    }
+  }
+#book-list .list-group{
+  font-size: medium;
+}
+  @media screen and (max-width: 992px){
+    #book-list .list-group{
+      font-size: large;
+    }
+  }
+  @media screen and (max-width: 768px){
+    #book-list .list-group{
+      font-size: small;
+    }
+  }
+#book-list .list-group-item{
+  border: none;
+}
+#book-list .list-group-item:hover{
+  color: #616161;
+  text-decoration: underline;
+}
+#books .list-group .fa-solid{ 
+  color: #121212;
+}
+#bookshelf{
+  text-align: center;
+}
+#bookshelf a{
+  font-family: "Google Sans Flex", sans-serif;
+  color: #050505;
+}
+#bookshelf a:hover{
+  color: #616161;
+  text-decoration: underline;
+}
+
+/* working experience */
+#work-experience{
+  background-color: #bef9f9;
+}
+
+#work-experience h2{
+  font-family: "Google Sans Flex", sans-serif;
+    font-size: 62px;
+}
+  @media screen and (max-width: 992px) {
+    #work-experience h2{
+      font-size: 62px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #work-experience h2{
+      font-size: 32px;
+    }
+  }
+
+#work-experience p{
+  font-size: 18px;
+} 
+  @media screen and (max-width: 992px) {
+    #work-experience p{
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #work-experience p{
+      font-size: 16px;
+    }
+  }
+
+#work-experience .agency{
+  font-family: "Google Sans Flex", sans-serif;
+  color: #050505;
+}
+
+#projects{
+    background: linear-gradient(0deg,#fce62e 40%,transparent 0);
+}
+#work-experience .agency:hover{
+  text-decoration: underline;
+  color: #616161;
+}
+#work-experience .fa-brands{ 
+  font-size: 18px;
+}
+#work-experience .btn a{
+  color: #ffffff;
+}
+#work-experience .btn a:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+#work-experience .btn{ 
+  border: none;
+  background-color: #121212;
+}
+#work-experience .btn:hover{ 
+  background-color: #616161;
+}
+
+
+/* footer */
+footer{
+  text-align: center;
+}
+
+/* contact */
+footer #contact{
+  background-color: #ffffff;
+  color: #050505;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+footer #contact h2{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 62px;
+}
+  @media screen and (max-width: 992px) {
+    footer #contact h2{
+      font-size: 62px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    footer #contact h2{
+      font-size: 32px;
+    }
+  }
+footer #contact h5{
+  font-family: "Google Sans Flex", sans-serif;
+  text-transform: initial;
+  font-size: xx-large;
+}
+#contact p{
+  font-size: 18px;
+}
+  @media screen and (max-width: 992px) {
+    #contact p{
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #contact p{
+      font-size: 16px;
+    }
+  }
+footer #contact span{
+  margin-right: 5px;
+}
+footer #contact .fa-x-twitter{
+  font-size: x-large;
+  color: #121212;
+}
+footer #contact .fa-x-twitter:hover{
+  color: #616161;
+}
+
+/* footnote */
+footer #footnote{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 14px;
+  padding-top: 15px;
+}
+#footnote #hosting{
+  margin-bottom: 0;
+}
+  @media only screen and 
+  (max-width: 576px){
+    #footnote #hosting{
+      font-size: x-small;
+    }
+  }
+#footnote #hosting a{
+  color: #616161;
+  text-decoration: none;
+}
+#footnote #hosting a:hover{
+  color: #050505;
+}
+#copyright a{
+  color: #616161;
+}
+#copyright a:hover{
+  color: #050505;
+}
+
+
+/* About */
+#main-about{
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#main-about h1{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 60px;
+  color: #050505;
+}
+  @media screen and (max-width: 768px) {
+    #main-about h1{
+      font-size: xx-large;
+    }
+  }
+#main-about h2{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+}
+  @media screen and (max-width: 768px) {
+    #main-about h2{
+      font-size: xx-large;
+    }
+  }
+#main-about h3{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: x-large;
+}
+
+#main-about p{
+  font-size: 20px;
+}
+  @media screen and (max-width: 992px) {
+    #main-about p{
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #main-about p{
+      font-size: 16px;
+    }
+  }
+
+#main-about .company-lists{
+  font-weight: 600;
+}
+#main-about .agency{
+  font-family: "Google Sans Flex", sans-serif;
+}
+#main-about .agency:hover{
+  color: #616161;
+  text-decoration: underline;
+}
+#main-about .job-role{
+  font-weight: 500;
+    display: inline;
+    background: linear-gradient(0deg,#fce62e 40%,transparent 0);
+}
+#main-about a{
+  font-weight: normal;
+  color: #050505;
+  font-style: normal;
+}
+#main-about a:hover{
+  color: #616161;
+  text-decoration: underline;
+}
+#main-about .btn{ 
+  border: none;
+  color: #ffffff;
+}
+#main-about .btn:hover{ 
+  background-color: #616161;
+  text-decoration: underline;
+}
+#aes{
+    background: linear-gradient(0deg,#fce62e 40%,transparent 0);
+}
+
+/* Toolbox */
+#main-toolbox{
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#main-toolbox h1{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 60px;
+}
+  @media screen and (max-width: 768px) {
+    #main-toolbox h1{
+      font-size: xx-large;
+    }
+  }
+#main-toolbox h2{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+}
+  @media screen and (max-width: 768px) {
+    #main-toolbox h2{
+      font-size: xx-large;
+    }
+  }
+#main-toolbox h3{
+  font-family: "Google Sans Flex", sans-serif;
+}
+#main-toolbox .card-title{
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+#main-toolbox h6{
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#main-toolbox li{
+  font-size: 18px;
+}
+  @media screen and (max-width: 992px) {
+    #main-toolbox li{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #main-toolbox li{
+      font-size: 16px;
+    }
+  }
+
