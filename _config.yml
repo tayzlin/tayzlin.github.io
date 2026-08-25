@@ -1,0 +1,40 @@
+title: "Tay Zar Lin"
+
+author:
+  name: Tay Zar Lin
+  email: taytheanalyst@gmail.com
+description: >
+  A guy who is a coffeeholic, a data nerd, and someone who has a passion for digital economic velocity. Currently, most of my time is spent focusing on data-driven insights and project growth.
+  
+# Build settings
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+jekyll:
+  post_order: descending
+
+# Minima-specific settings
+minima:
+  skin: auto
+  nav_pages:
+    - about.md
+    - blog.md
+    - toolbox.md 
+  social_links:
+    - title: github
+      icon: github
+      url: "https://github.com/tayzlin"
+    - title: x-twitter
+      icon: x-twitter
+      url: "https://x.com/@tay_zar_lin"
+    - title: linkedin       
+      icon: linkedin     
+      url: "https://linkedin.com/in/tayzarlin" 
+  hide_site_feed_link: true
+
+baseurl: ""
+url: "https://tayzlin.github.io"
+
+footer_content: "© 2026 Tay N Toast. All rights reserved."

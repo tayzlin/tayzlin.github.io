@@ -1,0 +1,216 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+// --- Typography (Inter Font) ---
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  letter-spacing: -0.01em;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+.site-title, .site-title:visited { 
+  font-family: "Averia Serif Libre", serif !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  color: #111 !important; 
+  text-decoration: none !important; 
+  margin-top: 0px;     
+  display: inline-block;
+}
+
+.site-nav .menu-icon {
+  font-family: none !important; 
+}
+
+.post-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700 !important;
+  line-height: 1.1;
+}
+
+.post-header h2, .post-header h3, 
+.post-content h1, .post-content h2, .post-content h3,
+.page-heading,
+.site-nav .page-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700 !important;
+  line-height: 1.2;
+}
+
+// Header & Navigation
+.site-header { 
+  background-color: #fdfdfd; 
+  border: none !important; 
+}
+
+.page-link { 
+  color: #111 !important; 
+  text-decoration: none !important; 
+}
+
+//
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 40px;               
+  margin: 40px 0;
+
+  .profile-img {
+    width: 150px !important;          
+    height: 150px !important;
+    border-radius: 50%; 
+    border: 4px solid #fff; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);    
+    object-fit: cover;
+    flex-shrink: 0;       
+  }
+
+  .intro-text {
+    h1 {
+      margin-top: 0;     
+      border-bottom: none;
+    }
+    
+    p {
+      margin-bottom: 0;
+      line-height: 1.6;
+      color: #333;         
+    }
+  }
+}
+
+// Post List Styling
+.post-list {
+  margin: 0 !important; 
+  padding: 0 !important; 
+  list-style: none;
+  li {
+    margin-bottom: 0 !important; 
+    padding-bottom: 8px !important; 
+    display: flex !important; 
+    align-items: baseline;
+    h3 { 
+      display: inline !important; 
+      margin: 0 !important; 
+      line-height: 1.2 !important; 
+      font-size: 16px !important; 
+      font-weight: 500 !important; 
+    }
+  }
+}
+
+.post-link { 
+  font-size: 16px !important; 
+  color: #111 !important; 
+  text-decoration: none !important; 
+  margin-left: 20px; 
+  &:hover { 
+    text-decoration: underline !important; 
+  } 
+}
+
+.post-meta { 
+  font-size: 14px; 
+  color: #999; 
+  min-width: 100px; 
+  display: inline-block !important; 
+}
+
+//Page List styling 
+.post-content ul li {
+  letter-spacing: -0.01em;
+  line-height: 1.6 !important;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+//index.md => icon container
+.social-links-home {
+  margin-top: 10px;
+  display: flex;      
+  gap: 15px;           
+  align-items: center;
+
+  span {
+    display: inline-flex;
+  }
+
+  a {
+    color: inherit !important; 
+    text-decoration: none !important;
+    border-bottom: none !important;
+    display: block;
+    line-height: 0; 
+  }
+
+  a:hover svg {
+    transform: scale(1.15);
+    transition: transform 0.2s ease;
+  }
+
+  .bi-github, .bi-twitter-x {
+    fill: #24292e !important; 
+  }
+}
+
+//Footer content
+.site-footer .wrapper::after {
+  content: "© 2026 Tay N Toast. All rights reserved.";
+  display: block;
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+  text-align: center; 
+}
+
+.social-media-list {
+  display: flex !important;
+  justify-content: center !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  li {
+    border: none !important; 
+    display: inline-block;  
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  a {
+    border: none !important; 
+    text-decoration: none !important;
+  }
+}
+
+
+// Mobile Responsive
+@media (max-width: 600px) {
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    .intro-text h1 {
+      margin-top: 15px;
+    }
+    
+    .social-links-home {
+      display: flex;
+      justify-content: center; 
+      gap: 15px;              
+      margin-top: 15px;       
+      width: 100%;             
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post-list li { flex-wrap: wrap; }
+  .post-meta { width: 100%; margin-bottom: 4px; }
+  .post-link { margin-left: 0; }
+  .footer-content { flex-direction: column-reverse; gap: 15px; text-align: center; }
+}
