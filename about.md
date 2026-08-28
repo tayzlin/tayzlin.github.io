@@ -10,7 +10,7 @@ Hi, I'm **Tay Zar Lin**. I'm an engineer from Myanmar (Burma), and who has a pas
 
 ## Education
 
-I graduated with a Bachelor's degree in Electronic Engineering from Pyay Technological University (PTU) in 2009.
+I graduated with a Bachelor's degree in Electronics Engineering from Pyay Technological University (PTU) in 2009.
 
 ## Work Experience
 
